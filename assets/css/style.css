@@ -13336,7 +13336,7 @@ span.select2-selection.select2-selection--single:focus {
   color: var(--white-color);
   text-align: center;
   border-radius: 99px;
-  background-color: rgba(244, 118, 41, 0.2);
+  background-color: #fff;
   position: relative;
   z-index: 2;
 }
