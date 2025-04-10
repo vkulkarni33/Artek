@@ -118,7 +118,7 @@ Version: 1.0.0
   --icon-font: "Font Awesome 6 Pro";
   --main-container: 1320px;
   --container-gutters: 24px;
-  --section-space: 120px;
+  --section-space: 80px;
   --section-space-mobile: 80px;
   --section-title-space: 60px;
   --ripple-ani-duration: 5s;
@@ -2406,8 +2406,39 @@ textarea.is-invalid {
   color: var(--theme-color);
 }
 
-.hexa-btn:hover:after {
-  background-color: var(--white-color);
+.section {
+  padding: 2rem;
+  color: white;
+  position: relative;
+}
+.section .icon {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 66%;
+  right: 3rem;
+  transform: translateY(50%);
+}
+.section .text-overlay {
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0.5;
+}
+.image-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: 2rem;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+.image-container .text-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .icon-btn {
@@ -2699,6 +2730,19 @@ textarea.is-invalid {
   font-size: 18px;
   font-weight: 600;
   color: var(--theme-color);
+  margin-bottom: 31px;
+  text-transform: capitalize;
+  line-height: 24px;
+  margin-top: -0.2em;
+  position: relative;
+}
+
+.sub-title-white {
+  font-family: var(--title-font);
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  color: space
   margin-bottom: 31px;
   text-transform: capitalize;
   line-height: 24px;
@@ -13336,7 +13380,7 @@ span.select2-selection.select2-selection--single:focus {
   color: var(--white-color);
   text-align: center;
   border-radius: 99px;
-  background-color: #fff;
+  background-color: #fffsub-title;
   position: relative;
   z-index: 2;
 }
@@ -16299,7 +16343,7 @@ span.select2-selection.select2-selection--single:focus {
   height: 125px;
   position: relative;
   z-index: 2;
-  margin: -70px 120px;
+  margin: -70px 643px;
   /* Medium Large devices */
 }
 
@@ -16363,7 +16407,8 @@ span.select2-selection.select2-selection--single:focus {
     gap: 10px 20px;
   }
   .brand-list-area .arrow-down {
-    display: none;
+    display: block;
+    margin: -48px 122px;
   }
 }
 
