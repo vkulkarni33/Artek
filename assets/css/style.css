@@ -16343,7 +16343,7 @@ span.select2-selection.select2-selection--single:focus {
   height: 125px;
   position: relative;
   z-index: 2;
-  margin: -70px 643px;
+  margin: -70px 723px;
   /* Medium Large devices */
 }
 
@@ -16408,7 +16408,7 @@ span.select2-selection.select2-selection--single:focus {
   }
   .brand-list-area .arrow-down {
     display: block;
-    margin: -48px 122px;
+    margin: -48px 122checklistpx;
   }
 }
 
