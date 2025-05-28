@@ -2414,7 +2414,7 @@ textarea.is-invalid {
 .section .icon {
   font-size: 2rem;
   position: absolute;
-  bottom: 66%;
+  bottom: 56%;
   right: 3rem;
   transform: translateY(50%);
 }
@@ -2427,7 +2427,7 @@ textarea.is-invalid {
   position: relative;
   text-align: center;
   color: white;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 .image-container img {
   width: 100%;
