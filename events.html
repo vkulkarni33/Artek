@@ -208,11 +208,14 @@
     <section class="overflow-hidden space" data-bg-src="assets/img/bg/pattern_bg_7.png">
         <div class="container">
             <div class="row justify-content-between align-items-center">
-                <div class="col-xl-4 col-lg-5">
+                <div>
                     <div class="title-area text-center text-lg-start">
                         <h2 class="sec-title">Events</h2>
                     </div>
+                     <p class="box-text pb-30" style="width: 100%;">Stay connected with Artek Surfin Chemicals as we showcase our latest innovations at leading industry events around the world. Discover how our advanced surface finishing solutions can elevate your manufacturing processes with sustainability, efficiency, and performance at the core.
+                        Join us at upcoming exhibitions to explore our technologies, meet our experts, and see how we're shaping the future of surface treatment.Visit our booth — let’s innovate together.</p>
                 </div>
+                
             <div class="tab-content">
                 <!-- Single item -->
                 <div class="tab-pane fade show active" id="nav-one" role="tabpanel" aria-labelledby="nav-one-tab">
@@ -280,17 +283,38 @@
                                             <img src="assets/img/gallery/Event-1_-Cable.png" alt="project image">
                                         </div>
                                         <div class="box-content">
-                                            <h3 class="box-title"><a href="#">CABLE & WIRE FAIR 2025
-                                            </a></h3>
-                                            <div class="checklist list-two-column fw-regular">
-                                                <ul>
-                                                    <li>Booth No.: 5E4-4</li>
-                                                    <li>Date: Nov 4 – Nov 6, 2025</li>
-                                                    <li>24/7 Daily Live Support</li>
-                                                    <li>Venue: Pragati Maidan, New Delhi, India</li>
-                                                </ul>
-                                            </div>
-                                        </div>
+  <h3 class="box-title">
+    <a href="#">CABLE & WIRE FAIR 2025</a>
+  </h3>
+
+  <div class="checklist list-two-column fw-regular">
+    <ul>
+      <li>Booth No.: 5E4-4</li>
+      <li>Date: Nov 4 – Nov 6, 2025</li>
+      <li>24/7 Daily Live Support</li>
+      <li>Venue: Pragati Maidan, New Delhi, India</li>
+    </ul>
+  </div>
+
+  <!-- Toggle Button -->
+  <button onclick="toggleEventDetails()" style="margin-top: 10px; background: none; border: none; color: #007BFF; cursor: pointer;">
+    Read More +
+  </button>
+
+  <!-- Hidden Content -->
+  <div id="event-details" style="display: none; margin-top: 10px;">
+    <p>
+      Join Artek Surfin Chemicals Ltd. at the Cable & Wire Fair 2025, where we will be showcasing our advanced surface finishing solutions specifically designed for the cable and wire industry.
+    </p>
+    <p>
+      Visit us at Booth 5E4-4 in Hall 5 to explore cutting-edge plating and coating technologies that improve performance, durability, and sustainability. Our experts will be on-site to discuss how our innovations can power up your production.
+    </p>
+    <p>
+      We look forward to connecting with you in New Delhi!
+    </p>
+  </div>
+</div>
+
                                     </div>
                                 </div>
                             </div>
@@ -438,6 +462,16 @@
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
         </svg>
     </div>
+  <script>
+  function toggleEventDetails() {
+    const content = document.getElementById("event-details");
+    const button = event.target;
+    const isVisible = content.style.display === "block";
+
+    content.style.display = isVisible ? "none" : "block";
+    button.textContent = isVisible ? "Read More +" : "Read Less –";
+  }
+</script>
 
     <!--==============================
     All Js File
